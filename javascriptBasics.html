@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Javascript Basics</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+
+	<div class="main-container">
+
+		<h1> Programming for dummies </h1>
+
+		<div class=navigation2 id="navigation2">
+			<nav class="pageLinks" id="link1">
+				<a href="index.html">Home</a>
+			</nav>
+			<nav class="pageLinks">
+				<a href="programmingIntro.html">Introduction to programming</a>
+			</nav>
+			<nav class="pageLinks">
+				<a href="programmerSkills.html">Skills of a Programmer</a>
+			</nav>
+
+			<nav class="pageLinks">
+				<a href="javascriptBasics.html">JavaScript Basics</a>
+			</nav>
+
+			<nav class="pageLinks">
+				<a href="myStory.html">My Programming Story</a>
+			</nav>
+
+			<nav class="pageLinks" id="link6">
+				<a href="itJobOfferings.html">IT Job openings</a>
+			</nav>
+		</div>
+		<!--
+		<div id="left-bar">
+			<p>After getting through the introductory article about <strong><em>JavaScript</em></strong> which can be found in right section of this page, following links will provide some detailed explanation of each cases mentioned in the article. <em>Please click on the names of the content you are interested to know more about.</em></p>
+			<nav class="js_links"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" target="_blank">Variable </a></nav></br>
+			<nav class="js_links"> <a href="https://www.javascript.com/learn/javascript/conditionals" target="_blank">Conditionals</a></nav></br>
+			<nav class="js_links"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank">Function</a></nav></br>
+			<nav class="js_links"> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank">Loops</a></nav></br>
+			<nav class="js_links"> <a href="https://www.javascript.com/learn/javascript/arrays" target="_blank">Arrays</a></nav></br>
+			<nav class="js_links"> <a href="https://javascript.info/object" target="_blank">Objects</a></nav></br>
+		</div> -->
+
+		<article class="center-container2" id="js">
+			<h2>JavaScript</h2>
+			<ul>
+				<li>JavaScript is a high-level, interpreted programming language. </li>
+				<li>Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web.</li>
+				<li>JavaScript enables interactive web pages and thus is an essential part of web applications.</li>
+				<li>Most JavaScript programs contain many JavaScript statements. Semicolons separate JavaScript statements. </li>
+			</ul>
+
+			<h3>Some common Javascript terminologies:</h3>
+
+			<p><strong><em>Variable</em></strong> <br /> JavaScript variables are containers for storing data values.The data can either be an integer, boolean or a string value. Those data can later be accessed and retrieved when needed. A beautiful functionality of a variable is, it gives opportunity for a user to modify the value of any specific state of the program. All variables must be indentified with unique names. Identifiers are case-sensitive in javascript. In javaScript '=' operator is an assignment operator, not an equal to operator. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" target="_blank">Read more</a></p>
+
+			<p><strong><em>Conditionals</em></strong> <br /> Conditionals control behavior in JavaScript and determine whether or not pieces of code can run.<br />if<br />The most common type of conditional is the <em>if</em> statement, which only runs if the condition enclosed in parentheses () is truthy.<br />else<br /> An if statement can be extended with an <em>else</em> statement, which adds another block to run when the <em>if</em> conditional doesn’t pass. <br />if else<br/> An <em>if</em> statement can also be extended with an <em>else if</em> statement, which adds another conditional with its own block.<br /> Though multiple <em>if else</em> conditionals can be used, but note that only the first <em>else if</em> block runs when it finds the statement to be true. JavaScript skips any remaining conditionals after it runs the first one that passes.
+				<a href="https://www.javascript.com/learn/javascript/conditionals" target="_blank">Read more!</a></p>
+
+			<p><strong><em>Function</em></strong> <br />A JavaScript function is a "recipe" of instructions whose purpose is to accomplish a well-defined task. In other words, Functions are blocks of code that can be named and reused. When the JavaScript executes a function, it processes these instructions, one by one, until there are no more instructions in the function to execute.<br />Some functions can be thought of as "processing units" that accept data from one end and produce results at the other. A function's input is called its parameters; its output is called the return value. <br /> For example, a JavaScript function whose purpose is to compute the square of a number might be defined as follows:</p>
+			<div class="example"><em>function</em> square (number)<br />{<br />var result = (number*number);<br />return result;}</div> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank" style="padding: 15em;">More about Functions!</a>
+
+			<p><strong><em>Loops</em></strong> <br /> Loops offer a quick and easy way to do something repeatedly. There are many different kinds of loops, but they all essentially do the same thing: they repeat an action some number of times. The various loop mechanisms offer different ways to determine the start and end points of the loop. There are various situations that are more easily served by one type of loop over the others. A loop can be compared as a computerized version of the game where you tell someone to take X steps in one direction then Y steps in another; for example, the idea "Go five steps to the east" could be expressed this way as a loop:<br />var step; for (step = 0; step
+				&lt; 5; step++) {<br />
+					// Runs 5 times, with values of step 0 through 4.<br />
+					console.log('Walking east one step');<br />}<br />And the result will show in the console window is:<br />
+			</p>
+			<div id="image"><img src="images/loop_console.png" alt="loop example answer"></div> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration" target="_blank" style="padding: 15em;">More JS Loops!</a>
+
+			<p><strong><em>Arrays</em></strong> <br /> Arrays are container-like values that can hold other values. The values inside an array are called elements.<br />For example, var <span style="color: green">breakfast = ["coffee", "croissant"]; </span> where <span style="color: green">breakfast</span> is an <em>array</em> which holds two value "coffee" and "croissant" that can be used in later events.<br />Array elements don’t all have to be the same type of value. Elements can be any kind of JavaScript value — even other arrays.To access one of the elements inside an array, one’ll need to use the brackets and a number like this: breakfast[1]. JavaScript arrays begin at 0, so the result will be "croissant". <br /> There are some properties and methods can be used while working with array. Which can be found by accessing the links from the left column. <a href="https://www.javascript.com/learn/javascript/arrays" target="_blank">More on Arrays!</a> </p>
+
+			<p><strong><em>Objects</em></strong> <br /> JavaScript is an object-oriented programming language.To develop applications in JavaScript effectively you need to understand how to work with objects. Objects can encapsulate both data (several different data items in a single object) and behavior. The behavior of an object is defined by defining one or more methods of the object. In JavaScript, a method is a JavaScript function that is invoked through an object.
+				<em><strong>literals</strong></em> are the fixed values in the program code. The following table illustrates different literals used in object programming in Javascript. </p>
+			<table>
+				<tr>
+					<th>Literal types</th>
+					<th>Values</th>
+				</tr>
+				<tr>
+					<td>number literals</td>
+					<td>12, 3.14</td>
+				</tr>
+				<tr>
+					<td>string literals</td>
+					<td>"Hello!", "100", '"id":100'</td>
+				</tr>
+				<tr>
+					<td>boolean literals</td>
+					<td>true, false</td>
+				</tr>
+				<tr>
+					<td>an array initialization literal</td>
+					<td>["bird", "cat", "dog"]</td>
+				</tr>
+				<tr>
+					<td>an object literal</td>
+					<td>{name: "Finland", population: 5501043}</td>
+				</tr>
+				<tr>
+					<td>an array initialization literal that includes two object literals</td>
+					<td>[ {name: "Finland", population: 5501043},<br />
+						{name: "Sweden", population: 9747355} ]
+					</td>
+				</tr>
+			</table>
+			<br />
+			<a href="https://javascript.info/object" target="_blank">More on Objects!</a>
+		</article>
+
+	</div>
+
+
+	<footer>
+		<p>©Sakib Sarwer, 2018<br />
+			<br />
+			<a href="http://validator.w3.org/check?uri=referer">
+                <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+		</p>
+	</footer>
+</body>
+
+</html>
